@@ -11,7 +11,7 @@
 
 ## Global Node Context environment
 * global object is working like the same as the window object
-    * can check blobal object method by console.log(global)
+    * can check global object method by console.log(global)
     * global.setTimeout can use or setTimeout like window object
 * Method for check directory of the file using console.log(__dirname);
 * Method for check directory with file name of the file using console.log(__filename);
@@ -23,7 +23,7 @@
         * export module by using [module.exports]
             * example of module.exports
                 * single module by using module.exports = function or variable contain values
-                * multiple module by using modile.exports = {
+                * multiple module by using module.exports = {
                     * 2 way of using
                         * directly by called variable like people;
                         * property by called variable like people: people;
