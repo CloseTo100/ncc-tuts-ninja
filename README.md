@@ -107,7 +107,29 @@ if(!fs.existsSync('./assets')) {
         console.log('directory removed successfully');
     })
 }
-* delete file [delete files]
+
+### delete file [delete files]
+* delete files from the directory
+const fs = require('fs');
+fs.unlink(2 arguments);
+fs.unlink('path', callback function);
+* fs.unlink('./docs/deleteme.txt', (err) => {
+    if(err) {
+        console.log(err);
+    }
+    console.log('file removed successfully');
+})
+
+* create a file to the directory
+const fs = require('fs');
+fs.writeFile(3 arguments);
+fs.writeFile('path', callback function);
+fs.writeFile('./docs/deleteme.txt', 'create a deleteme.txt file in this directory', (err) => {
+    if(err) {
+        console.log(err);
+    }
+    console.log('file created successfully');
+    });
 
 # ETC
 * ./ search the files in the same directory
