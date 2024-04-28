@@ -37,13 +37,77 @@
         * using by os.homedir(); to see the path of the file contain
 
 ## The FileSystem
-* read files [reading files]
+### read files [reading files]
+read files from the directory
+const fs = require('fs'); // called module system
+fs.readFile(2 arguments);
+fs.readFile('directory[location file]', callback function (2 arguments));
+* example
+    * fs.readFile('./docs/file1.txt', (err, data) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log(data); // This will show/display buffer to console
+        console.log(data); // pass data to String from the exists file
+    })
 
-* write file
+### write file [writing files]
+write files to the directory
+const fs = require('fs');
+fs.writeFile(3 arguments);
+fs.writeFile('directory', 'content to to write in the file', called function);
+* example
+    * fs.writeFile('./docs/file2.txt', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log('file written successfully');
+    })
 
-* directories
+* example write to the existing file
+    * fs.writeFile('./docs/file1.txt', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log('file written successfully');
+    });
 
-* delete file
+### directories [create or remove directories]
+create a directory to location
+* const fs = require('fs');
+* fs.mkdir('path', callback function);
+    * fs.mkdir('./assets', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log('directory created successfully');
+    });
+remove a directory from the location
+* const fs = require('fs');
+* fs.rmdir('path', callback function);
+    * fs.rmdir('./assets', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.og('directory removed successfully');
+    })
+### create and remove file by using if else for secure err
+if(!fs.existsSync('./assets')) {
+    fs.mkdir('./assets', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log('directory created successfully');
+    })
+} else {
+    fs.rmdir('./assets', (err) => {
+        if(err) {
+            console.log(err);
+        }
+        console.log('directory removed successfully');
+    })
+}
+* delete file [delete files]
 
 # ETC
 * ./ search the files in the same directory
