@@ -24,3 +24,21 @@
 * Return HTML pages to the browser by create a directory and response it to the browser.
 
 ## Basic Routing
+* When we have too many pages on our website. We can set the default routing by using many way. But in this lesson we will using switch case
+    * Like this Example
+        * switch (req.url) {
+            case '/':
+                location or path
+        }
+
+## Status Codes
+* Status codes describe the type of response send to the browser
+    * 200 - OK
+    * 301 - Resourced Moved
+    * 404 - Not Found
+    * 500 Internal server error
+* 100 Range - information response
+* 200 Range - success codes
+* 300 Range - codes for redirects
+* 400 Range - user or client error codes
+* 500 Range - server error codes
