@@ -13,8 +13,9 @@ const server = http.createServer((req, res) => {
     console.log('Hello');
   });
 
-  greet();
-  greet();
+  // will run 1 times by _.once from lodash package
+  // greet();
+  // greet();
 
   //set header content type
   res.setHeader("Content-Type", "text/html");
