@@ -10,3 +10,8 @@
 
 ## Partials to split the template more easily to management
 * Create a part inside view folder
+
+## Add CSS Style inside views folder
+    * Create a partials folder
+        * add CSS styles into head files
+
