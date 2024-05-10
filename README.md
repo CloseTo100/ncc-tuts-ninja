@@ -8,3 +8,5 @@
 * EJS Templates are processed through the ejs view engine on a server
     * server -> EJS -> EJS View engine -> HTML [Server Side Rendering]
 
+## Partials to split the template more easily to management
+* Create a part inside view folder
