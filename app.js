@@ -18,6 +18,7 @@ mongoose.connect(dbURI)
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 // mongoose and mongo sandbox routes
@@ -71,6 +72,10 @@ app.get('/blogs', (req, res) => {
     .catch((err) => {
         console.log(err);
     })
+});
+
+app.post('/blogs', (req, res) => {
+
 });
 
 app.get('/blogs/create', (req, res) => {
